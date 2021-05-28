@@ -1,1 +1,133 @@
-Percobaan
+Data
+
+
+Modal
+* kas 
+* Piutang
+* Utang 
+* Peralatan
+* Perlengkapan
+Biaya
+* 
+
+Beban/liabilitas
+* Beban penyusutan
+Link spreadsheet : https://docs.google.com/spreadsheets/d/1xEk3_-flJmvYH9lgePIk1V3-i4Wj0BRCrz2QVAneKpk/edit?usp=sharing
+
+
+PENJUALAN BERSIH
+* Penjualan
+* Retur
+* Penjualan Bersih
+HARGA POKOK PENJUALAN 
+* Persediaan Barang Jadi (awal)
+* Harga Pokok Produksi
+* Barang tersedia untuk dijual
+* Persediaan Barang Jadi (akhir)
+* Harga Pokok Penjualan
+* Laba Kotor
+BEBAN OPERASIONAL
+Beban Penjualan
+* Beban Angkut Penjualan
+* Beban Penyusutan Kendaraan
+* Beban Perawatan Kendaraan
+* Total Beban Penjualan
+BEBAN ADMINISTRASI DAN UMUM
+* Beban lain-lain
+* Total Biayan adm dan umum
+* ________________
+
+
+
+
+Fitur mulai usaha
+* Mengisi modal
+   * Manggil botnya (init atau modal awal)
+   * Dirinci satu2
+      * **Fitur suspend(siapa tahu capek)
+Fitur akhir bulan
+* Biaya bulanan
+   * Dirinci satu2
+      * Listrik air pegawai dll
+      * **Fitur suspend(siapa tahu capek)
+Fitur transaksi
+* Fitur transaksi 
+   * Prive
+   * Laba rugi
+      * Penjualan dapet berapa ilang berapa
+      * Bisa input banyak transaksi dalam 1 hari
+      * Bisa input transaksi beda hari
+   * Peralatan Perlengkapan Kendaraan gedung
+      * Beli apa berapa nilainya
+      * Bisa input banyak transaksi dalam 1 hari
+      * Bisa input transaksi beda hari
+Fitur utang piutang
+* Client jumlah kontak tenggat dll
+
+
+Fitur nampilin laporan keuangan
+* Bisa export (pdf)
+* *Bisa di share
+
+
+***Fitur repository
+* Mengumpulkan laporan yang standard
+
+
+MVP data dapat diinput oleh pengguna dan dapat melihat atau mempublikasikan laporannya
+
+
+Update 23/5/2021
+Database mungkin begini dulu kalau ada masalah atau bingung bisa di komen dulu
+Yang tidak ada indent itu nama tabel(bisa diganti) yang di indent nama fieldnya bisa diganti berikutnya adalah tipe datanya
+
+
+Penjualan
+        tanggal datetime
+        nilai_total float
+        biaya float
+
+
+Beban // semua beban dan waktu pembayaran 
+        id_beban char(x)
+        id_aset char(x)
+        nama varchar(x)
+        tanggal_update datetime
+        tanggal_apply datetime
+        biaya float
+        
+        
+// Pajak pakai fungsi aja menghitungnya tidak perlu tabel
+
+
+aset_tetap
+        id_aset char(x)
+        id_beban char(x)
+        nama varchar(x)
+        nilai float
+        
+perlengkapan
+        nama varchar(x)
+        nilai float
+
+
+perubahan_aset_lancar
+        date datetime
+        nama varchar(x) //kas, piutang, perlengkapan, bahan_baku, barang_jadi, barang_proses
+        id_transaksi char(x)
+
+
+//bagian aset lancar bisa didapat dari semua sum transaksi dengan tagnya(nama) masing2 
+
+
+kewajiban?
+        kewajiban_lancar float?
+        kewajiban_panjang float?
+
+
+transaksi
+        id_transaksi char(x)
+        nilai float
+
+
+pingin tanya ini terhubung dengan modal bagian mana atau penjelasan singkat kewajiban itu bagaimana?
