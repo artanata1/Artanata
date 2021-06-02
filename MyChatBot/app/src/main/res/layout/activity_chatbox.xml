@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChatboxActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_bot_one"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/civ_bot_one"
+                app:layout_constraintTop_toTopOf="@id/civ_bot_one">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hello Rahul, how can I help?" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time_bot_one"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3:15 PM"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_one"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_one" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_one"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="navigateToProfile"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_time_bot_one" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_user_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="4dp"
+                app:cardBackgroundColor="@color/purple_500"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toStartOf="@id/civ_user_one"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/civ_user_one">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I want to know what my reservation\nhas been confirmed or not?"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time_user_one"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3:18 PM"
+                app:layout_constraintEnd_toEndOf="@id/cv_user_one"
+                app:layout_constraintTop_toBottomOf="@id/cv_user_one" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_bot_two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_time_user_one" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/civ_bot_two"
+                app:layout_constraintTop_toTopOf="@id/civ_bot_two">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your reservation for one-night stay\non May 12th has been confirmed." />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_two"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_two">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Would you also like to reserve a\ntable at restaurant?" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time_bot_two"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3:19 PM"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_three"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_three" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="navigateToProfile"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_time_bot_two" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_user_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="4dp"
+                app:cardBackgroundColor="@color/purple_500"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toStartOf="@id/civ_user_two"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/civ_user_two">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I want to know what my reservation\nhas been confirmed or not?"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time_user_two"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3:20 PM"
+                app:layout_constraintEnd_toEndOf="@id/cv_user_two"
+                app:layout_constraintTop_toBottomOf="@id/cv_user_two" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_bot_three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_time_user_two" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/civ_bot_three"
+                app:layout_constraintTop_toTopOf="@id/civ_bot_three">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You can choose any of the\nfollowing times:" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_four"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_four">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="May 17th on 6:00 PM" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_five"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_five">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="May 17th on 7:00 PM" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_six"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_six">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="May 17th on 8:00 PM" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time_bot_three"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3:21 PM"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_seven"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_seven" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="navigateToProfile"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_time_bot_three" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_user_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="4dp"
+                app:cardBackgroundColor="@color/purple_500"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toStartOf="@id/civ_user_three"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/civ_user_three">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="May 17th on on 7:00 PM"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_user_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/purple_500"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="@id/cv_user_three"
+                app:layout_constraintTop_toBottomOf="@id/cv_user_three">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Can you explain pricing to me?"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time_user_three"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3:23 PM"
+                app:layout_constraintEnd_toEndOf="@id/cv_user_four"
+                app:layout_constraintTop_toBottomOf="@id/cv_user_four" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_bot_four"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_time_user_three" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/civ_bot_four"
+                app:layout_constraintTop_toTopOf="@id/civ_bot_four">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sorry I didn't understand that,\nI'm still learning." />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_eight"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_eight">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feel free to give that another try\nby typing your message differently?" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time_bot_four"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3:24 PM"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_nine"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_nine" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_four"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="navigateToProfile"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_time_bot_four" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_user_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="4dp"
+                app:cardBackgroundColor="@color/purple_500"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toStartOf="@id/civ_user_four"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/civ_user_four">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="May 17th 7:00 PM"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time_user_four"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3:25 PM"
+                app:layout_constraintEnd_toEndOf="@id/cv_user_five"
+                app:layout_constraintTop_toBottomOf="@id/cv_user_five" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_bot_five"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_time_user_four" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bot_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="50dp"
+                app:cardBackgroundColor="#F0F0F0"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/civ_bot_five"
+                app:layout_constraintTop_toTopOf="@id/civ_bot_five">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sorry I didn't understand that,\nI'm still learning." />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_time_bot_five"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="3:25 PM"
+                app:layout_constraintStart_toStartOf="@id/cv_bot_ten"
+                app:layout_constraintTop_toBottomOf="@id/cv_bot_ten" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:hint="Type a message"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="NestedWeights" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_send_24"
+            app:backgroundTint="@color/purple_500"
+            app:elevation="0dp"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
