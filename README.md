@@ -22,3 +22,13 @@ Deliverables that will be submitted to stakeholders are:
    3. AI chatbot user statistics report
    4. Final Report
    5. The final product is a chatbot application with NLP (Natural Language Processing)
+
+###Project Resources: 
+- Roles and responsibilities
+  MD : create a mobile app so that it can be linked to the API
+  CC : Creating website interfaces, building training infrastructure, creating NLP and NLU APIs.
+  ML : Manage financial reporting automation with Classification algorithm type in Supervised Learning.
+
+- Dataset:
+  Ministry of Industry (Smart Sentra Kemenperin, eSmartIKM, Pemetaan Industri Menengah)
+
