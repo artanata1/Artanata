@@ -12,11 +12,17 @@ def make_doc():
 	doc = SimpleDocTemplate(pdf, pagesize=letter)
 
 	story = []
-	#data dari pdfnya edit aja sesuai spacing sama JSON yang didapat
 	
-	data= [['', '', 'Laporan Laba/Rugi', '', ''],
-	 ['', 'Nama Perusahaan', 'json.nama', '', ''], 											#1
-	 ['', 'Periode', 'getdate()', '', ''], 													#2
+	pajak= 0 
+	#hitung pajak disini
+	
+	#hitung pajak berakhir
+	
+	#data dari pdfnya edit aja sesuai spacing sama JSON yang didapat
+	data= [['',  'Laporan Laba/Rugi', '', ''],
+	 [],
+	 [ 'Nama Perusahaan', 'json.nama', '', ''], 											#1
+	 ['Periode', 'getdate()', '', ''], 													#2
 	 [],																					#3
 	 ['Penjualan Bersih'], 																	#4
 	 ['Penjualan','','','json.penjualan'] ,													#5
@@ -42,9 +48,9 @@ def make_doc():
 	 ['Beban lain-lain','json.blainlain'],
 	 ['Total Biaya Adm dan umum','','json.blainlain'],
 	 ['TOTAL BEBAN OPS & ADUM','','xx',''],													#json.bangkut+json.bsusut+json.brawatk+json.blainlain
-	 ['LABA BERSIH USAHA SBLM PAJAK','','',''],
-	 ['PAJAK PENGHASILAN','','',''],
-	 ['LABA BERSIH USAHA STLH PAJAK','','',''],
+	 ['LABA BERSIH USAHA SBLM PAJAK','','','xx'],											#json.penjualan+json.returdiskon-(json.pbj+json.hpp+json.pbjakhir)-(json.bangkut+json.bsusut+json.brawatk+json.blainlain)
+	 ['PAJAK PENGHASILAN','','','pajak'],														#pajak
+	 ['LABA BERSIH USAHA STLH PAJAK','','','xx'],											#json.penjualan+json.returdiskon-(json.pbj+json.hpp+json.pbjakhir)-(json.bangkut+json.bsusut+json.brawatk+json.blainlain)-pajak
 	 
 	 ]
 
