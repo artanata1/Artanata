@@ -1,0 +1,339 @@
+{"datasets": [
+
+    {
+        "tag": "Salam",
+        "quests": ["Hi", "Hai", "Hello", "Halo", "Hallo", "P", ".", "Assalamualaikum", "He", "Selamat Pagi", "Met Pagi", "Pagi", "Selamat Siang", "Met Siang", "Siang", "Selamat Sore", "Met Sore", "Sore", "Selamat Malam", "Malam", "Met Malem", "Malem"],
+        "respons": ["Halo! Saya ArtaBot. Apa Anda membutuhkan bantuan ?"]
+    },
+
+    {
+        "tag": "Butuh_Bantuan",
+        "quests": ["Saya butuh bantuan", "Aku butuh bantuan", "Bantulah saya", "Bantulah aku", "Bantu saya dong", "bantu aku dong", "Iya", "Ya", "Y"],
+        "respons": ["Saya dapat membantu Anda perihal : 1. Membuat laporan keuangan UMKM 2. Informasi terkait akuntansi. Bantuan apa yang Anda inginkan ?"]
+    },
+
+    {
+        "tag": "Informasi",
+        "quests": ["Informasi", "Informasi terkait akuntansi", "2"],
+        "respons": ["Informasi apa yang ingin Anda ketahui ?"]
+    },
+
+    {
+        "tag": "Laporan",
+        "quests": ["Laporan", "Laporan keuangan UMKM", "1"],
+        "respons": ["Ingin menyusun laporan laba rugi di chatbot ini ? \nIkuti langkah - langkah berikut ini : \n1. Masuk ke Menu 'Form Laporan' \n2. Isi semua bagian di Form Laporan \n3. Jika semua telah terisi, klik submit \n4. Masuk ke Menu 'Laporan' untuk mencetak hasil laporan"]
+    },
+
+    {
+        "tag": "Tidak_Butuh_Bantuan",
+        "quests": ["Tidak", "Tdk", "Engga", "Enggak", "Nggak", "Nggk", "Gak", "Gk", "G", "No"],
+        "respons": ["Baiklah. Semoga hari Anda menyenangkan!"]
+    },
+
+    {
+        "tag": "Ucapan_Terimakasih",
+        "quests": ["Makasih", "Makasih atas bantuannya", "Makasih untuk bantuannya", "Makasih telah membantu saya", "Makasih atas pelayanannya", "Terimakasih", "Terimakasih atas bantuannya", "Terimakasih untuk bantuannya", "Terimakasih telah membantu saya", "Terimakasih atas pelayanannya", "Terima kasih", "Terima kasih atas bantuannya", "Terima kasih untuk bantuannya", "Terima kasih telah membantu saya", "Terima kasih atas pelayanannya", "Terimakasih banyak", "Terima kasih banyak", "Thank you", "Thanks"],
+        "respons": ["Senang mengetahui bahwa saya telah membantu. Semoga hari Anda menyenangkan!"]
+    },
+
+    {
+        "tag": "Penutup",
+        "quests": ["Goodbye", "good bye", "Bye", "Byee", "Selamat tinggal", "See you"],
+        "respons": ["Semoga hari Anda menyenangkan! See you.."]
+    },
+
+    {
+        "tag": "Pembukuan",
+        "quests": ["Apa yang dimaksud dengan istilah pembukuan ?", "Apa yang dimaksud dengan pembukuan ?", "Apa yang dimaksud pembukuan ?", "Apa arti dari istilah pembukuan ?", "Apa arti dari pembukuan ?", "Apa arti pembukuan ?", "Arti pembukuan ?", "Apa itu pembukuan ?", "Pembukuan", "Bookkeeping"],
+        "respons": ["Pembukuan (bookkeeping) adalah dokumentasi transaksi secara kronologis."]
+    },
+
+    {
+        "tag": "Akuntansi",
+        "quests": ["Apa yang dimaksud dengan istilah akuntansi ?", "Apa yang dimaksud dengan akuntansi ?", "Apa yang dimaksud akuntansi ?", "Apa arti dari istilah akuntansi ?", "Apa arti dari akuntansi ?", "Apa arti akuntansi ?", "Arti akuntansi ?", "Apa itu akuntansi ?", "Akuntansi", "Accounting"],
+        "respons": ["Akuntansi (accounting) adalah suatu proses mencatat, meringkas, mengklarifikasikan, mengolah, dan menyajikan data transaksi, serta berbagai aktivitas yang berhubungan dengan keuangan, sehingga informasi tersebut daoat digunakan oleh seseorang yang ahli di bidangnya dan menjadi bahan untuk mengambil suatu keputusan."]
+    },
+
+    {
+        "tag": "Jurnal_Umum",
+        "quests": ["Apa yang dimaksud dengan istilah jurnal umum ?", "Apa yang dimaksud dengan jurnal umum ?", "Apa yang dimaksud jurnal umum ?", "Apa arti dari istilah jurnal umum ?", "Apa arti dari jurnal umum ?", "Apa arti jurnal umum ?", "Arti jurnal umum ?", "Apa itu jurnal umum ?", "Jurnal umum", "General ledger"],
+        "respons": ["Jurnal Umum (General Ledger) juga disebut buku besar, pada jurnal umum Anda melacak dan mencatat saldo akun per periode secara kronologis. Anda harus memantau saldo akun, kredit, dan debit, yang kemudian digunakan untuk mendapatkan gambaran besar dari keseluruhan bisnis Anda."]
+    },
+
+    {
+        "tag": "Aktiva",
+        "quests": ["Apa yang dimaksud dengan istilah aktiva ?", "Apa yang dimaksud dengan aktiva ?", "Apa yang dimaksud aktiva ?", "Apa arti dari istilah aktiva ?", "Apa arti dari aktiva ?", "Apa arti aktiva ?", "Arti aktiva ?", "Apa itu aktiva ?", "Apa saja jenis - jenis aktiva ?", "Apa saja jenis aktiva ?", "Ada berapa jenis aktiva ?", "Jenis aktiva", "Aktiva", "Assets"],
+        "respons": ["Aktiva (assets) adalah kekayaan yang dimiliki perusahaan. Aktiva merupakan sumber daya bagi perusahaan untuk melakukan usaha. Ada berbagai cara untuk mengkategorikan aset bisnis, tetapi dua kategori yang paling dasar adalah 'Aktiva Lancar' dan 'Aktiva Tetap'. \n1. Aktiva Lancar (Currents Assets) \nAktiva lancar (current assets) adalah uang kas dan aktiva lain atau sumber yang diharapkan dapat dikonversi menjadi uang tunai atau dijual atau dikonsumsi selama siklus usaha perusahaan yang normal atau dalam waktu satu tahun. Contohnya seperti akun bisnis, stok, dan barang dagangan. \n2. Aktiva Tetap (Fixed Assets) \nAktiva tetap (fixed assets) adalah kekayaan perusahaan yang bernilai besar yang sifatnya tetap atau permanen, digunakan dalam kegiatan perusahaan dengan jangka panjang dan berulang tanpa bermaksud menjual dalam kegiatan normal. Contohnya seperti ruang kantor atau alat berat."]
+    },
+
+    {
+        "tag": "Pendapatan",
+        "quests": ["Apa yang dimaksud dengan istilah pendapatan ?", "Apa yang dimaksud dengan pendapatan ?", "Apa yang dimaksud pendapatan ?", "Apa arti dari istilah pendapatan ?", "Apa arti dari pendapatan ?", "Apa arti pendapatan ?", "Arti pendapatan ?", "Apa itu pendapatan ?", "Pendapatan", "Income"],
+        "respons": ["Penghasilan, pendapatan, dan penjualan, atau income adalah semua istilah untuk uang yang dibayarkan orang lain kepada Anda untuk sebuah layanan atau produk, atau investasi yang dilakukan orang lain dalam bisnis Anda. Jika Anda memberikan kredit kepada pelanggan, berarti mereka berutang kepada bisnis Anda untuk dibayarkan di kemudian hari. Tagihan yang belum dibayar oleh pelanggan masuk ke dalam kategori yang disebut piutang dagang."]
+    },
+
+    {
+        "tag": "Biaya",
+        "quests": ["Apa yang dimaksud dengan istilah biaya?", "Apa yang dimaksud dengan ?", "Apa yang dimaksud biaya ?", "Apa arti dari istilah biaya ?", "Apa arti dari biaya ?", "Apa arti biaya ?", "Arti biaya ?", "Apa itu biaya penjualan ?", "Biaya penjualan", "Cost"],
+        "respons": ["Biaya (cost) adalah aliran keluar atau pemakaian lain aktiva atau timbulnya hutang selama suatu periode yang berasal dari penyerahan atau pembuatan barang, penyerahan jasa, atau dari pelaksanaan kegiatan lain yang merupakan kegiatan utama badan usaha."]
+    },
+
+    {
+        "tag": "Beban",
+        "quests": ["Apa yang dimaksud dengan istilah beban ?", "Apa yang dimaksud dengan beban ?", "Apa yang dimaksud beban ?", "Apa arti dari istilah beban ?", "Apa arti dari beban ?", "Apa arti beban ?", "Arti beban ?", "Apa itu beban ?", "Beban", "Expenses"],
+        "respons": ["Beban (expenses) adalah pengeluaran atau pembelian tetap yang Anda lakukan untuk bisnis Anda, seperti perangkat point-of-sale, atau asuransi. Jika Anda melakukan pembelian ini secara kredit, biaya ini dikenal sebagai hutang dagang."]
+    },
+
+    {
+        "tag": "Kewajiban",
+        "quests": ["Apa yang dimaksud dengan istilah kewajiban ?", "Apa yang dimaksud dengan kewajiban ?", "Apa yang dimaksud kewajiban ?", "Apa arti dari istilah kewajiban ?", "Apa arti dari kewajiban ?", "Apa arti kewajiban ?", "Arti kewajiban ?", "Apa itu kewajiban ?", "Kewajiban", "Liabilities"],
+        "respons": ["Kewajiban (liabilities) adalah hutang yang harus Anda bayar. Kewajiban mungkin termasuk upah karyawan atau uang yang Anda berutang kepada pemasok."]
+    },
+
+    {
+        "tag": "Penyusutan",
+        "quests": ["Apa yang dimaksud dengan istilah penyusutan ?", "Apa yang dimaksud dengan penyusutan ?", "Apa yang dimaksud penyusutan ?", "Apa arti dari istilah penyusutan ?", "Apa arti dari penyusutan ?", "Apa arti penyusutan ?", "Arti penyusutan ?", "Apa itu penyusutan ?", "Penyusutan", "Depreciation"],
+        "respons": ["Aset yang mahal, seperti gedung atau laptop, adalah investasi jangka panjang dalam bisnis Anda. Namun, beberapa aset (seperti furnitur dan kendaraan) akan kehilangan nilainya seiring waktu karena usia, usang, atau karena tidak lagi berguna. Penyusutan atau depresiasi menurunkan nilai-nilai aset tersebut."]
+    },
+
+    {
+        "tag": "Ekuitas",
+        "quests": ["Apa yang dimaksud dengan istilah ekuitas ?", "Apa yang dimaksud dengan ekuitas ?", "Apa yang dimaksud ekuitas ?", "Apa arti dari istilah ekuitas ?", "Apa arti dari ekuitas ?", "Apa arti ekuitas ?", "Arti ekuitas ?", "Apa itu ekuitas ?", "Ekuitas", "Equity"],
+        "respons": ["Ekuitas (equity) adalah bagian yang Anda atau mitra bisnis Anda miliki atau telah diinvestasikan dalam bisnis, dikurangi kewajiban yang dibayarkan. Ekuitas juga bisa disebut 'modal', dan mungkin termasuk 'investasi modal' dalam aset tetap untuk penggunaan jangka panjang, seperti bangunan yang Anda beli untuk kantor Anda."]
+    },
+
+    {
+        "tag": "Neraca",
+        "quests": ["Apa yang dimaksud dengan istilah neraca ?", "Apa yang dimaksud dengan neraca ?", "Apa yang dimaksud neraca ?", "Apa arti dari istilah neraca ?", "Apa arti dari neraca ?", "Apa arti neraca ?", "Arti neraca ?", "Apa itu neraca ?", "Neraca", "Balance"],
+        "respons": ["Neraca adalah suatu bagian dari laporan keuangan suatu perusahaan atau entitas bisnis yang dihasilkan dalam suatu periode akuntansi di mana menunjukkan posisi atas keuangan suatu perusahaan tersebut pada akhir periode akuntansi tersebut yang bisa menjadi dasar dalam menghasilkan keputusan bisnis."]
+    },
+
+    {
+        "tag": "Laporan_Laba_Rugi",
+        "quests": ["Apa yang dimaksud dengan istilah laporan laba rugi ?", "Apa yang dimaksud dengan laporan laba rugi ?", "Apa yang dimaksud laporan laba rugi ?", "Apa arti dari istilah laporan laba rugi ?", "Apa arti dari laporan laba rugi ?", "Apa arti laporan laba rugi ?", "Arti laporan laba rugi ?", "Apa itu laporan laba rugi ?", "Laporan laba rugi", "Income Statement"],
+        "respons": ["Laporan laba rugi (income statement) juga dikenal sebagai pernyataan untung rugi, yang menunjukkan berapa banyak uang yang Anda hasilkan dan berapa banyak yang telah Anda habiskan selama rentang waktu tertentu, seperti seperempat atau satu tahun. Laporan laba rugi adalah penilaian atas laba dan rugi Anda untuk menentukan laba bersih Anda selama satu tahun."]
+    },
+
+    {
+        "tag": "Laporan_Arus_Kas",
+        "quests": ["Apa yang dimaksud dengan istilah laporan arus kas ?", "Apa yang dimaksud dengan laporan arus kas ?", "Apa yang dimaksud laporan arus kas ?", "Apa arti dari istilah laporan arus kas ?", "Apa arti dari laporan arus kas ?", "Apa arti laporan arus kas ?", "Arti laporan arus kas ?", "Apa itu laporan arus kas ?", "Laporan arus kas", "Cash Flow Statement"],
+        "respons": ["Laporan arus kas (cash flow statement adalah laporan secara real-time yang memantau berapa banyak uang tunai masuk dan dari mana asal uang tersebut (bukan kredit), dikurangi uang tunai yang dikeluarkan. Arus kas masuk adalah jumlah dari semua uang yang masuk, dari produk atau layanan yang dijual dan langsung dibayar. Total arus kas keluar adalah jumlah uang yang Anda habiskan untuk bisnis Anda, misalnya, membeli persediaan."]
+    },
+
+    {
+        "tag": "Penyebab_Kerugian",
+        "quests": ["Apa Penyebab laporan menunjukkan kerugian ?"],
+        "respons": ["1. Pembelian persediaan yang tinggi tetapi tidak seimbang dengan kenaikan harga jual. \n2. Terdapat potongan penjualan yang tidak terkontrol. \n3. Modal pembelian persediaan dari hutang bank. \n4. Biaya operasional yang tidak terkontrol."]
+    },
+
+    {
+        "tag": "Indikasi_Kerugian",
+        "quests": ["Bagaimana saat laporan menunjukkan kerugian ?"],
+        "respons": ["1. Menyeimbangkan harga jual dengan pembelian persediaan. dan kamu bisa mencari harga persediaan yang lebih rendah dari biasanya. \n2. Jika ada potongan harga, terapkan pada suatu acara tertentu atau promo tertentu. \n3. Minimasi hutang bank karena jika digunakan untuk membeli persediaan, maka terdapat keuntungan yang perlu disisihkan untuk membayar bunga. kamu bisa beralih menggunakan aset pribadi, dana hibah, atau situs crowdfunding. \n4. Melakukan control biaya operasional, misalnya persediaan, listrik, gaji pegawai, sewa gedung atau lahan. jangan sampe berlebihan ya kawan."]
+    },
+
+    {
+        "tag": "Indikasi_Keuntungan",
+        "quests": ["Mengapa disaat kita mengalami keuntungan namun tidak terjadi pertambahan kas ?"],
+        "respons": ["1.Terdapat perputaran yang tersendat. Hal itu berarti terdapat ketidakseimbangan belanja persediaan dengan penjualan yang dilakukan. \n2. Adanya hutang yang harus dibayar. Kas akan keluar pada saat perusahaan harus membayar sejumlah uang untuk hutang bank atau hutang pinjaman yang lainnya kawan. \n3. Sebagai pemimpin usaha disarankan jangan terlalu sering mengambil modal (prive)."]
+    },
+
+    {
+        "tag": "Komponen_Lap_Laba_Rugi",
+        "quests": ["Ada berapa kommponen pokok dalam laporan laba rugi ?"],
+        "respons": ["1. Total pendapatan/penjualan. \n2. Total beban. \n3. Laba atau rugi."]
+    },
+
+    {
+        "tag": "Menyusun_Lap_Laba_Rugi",
+        "quests": ["Bagaimana langkah menyusun laporan laba rugi ?"],
+        "respons": ["1. Siapkan jurnal transaksi. akan lebih mudah memperhatikan akun akun pendapatan beban dan turunannya. \n2. Posting transaksi ke buku besar. \n3. Susun laporan laba rugi seetelah melakukan penyusunan kertas kerja. \n4. Kutip komponen pendapatan dan beban dari kertas kerja dalam kolom laba-rugi, sedangkan komponen laba atau rugi = total pendapatan - total beban. \n5. Nilai kinerja usaha berdasarkan laporan laba rugi yang telah kita susun."]
+    },
+
+    {
+        "tag": "Laba/Rugi",
+        "quests": ["Bagaimana kita tahu posisi sebuah usaha saat laba/rugi ?"],
+        "respons": ["1. Laba saat pendapatan > beban. \n2. Rugi saat beban > laba."]
+    },
+
+    {
+        "tag": "Penjualan",
+        "quests": [
+            "Apa yang dimaksud dengan istilah penjualan ?", 
+            "Apa yang dimaksud dengan penjualan ?", 
+            "Apa yang dimaksud penjualan ?", 
+            "Apa arti dari istilah penjualan ?", 
+            "Apa arti dari penjualan ?", 
+            "Apa arti penjualan ?", 
+            "Arti penjualan ?", 
+            "Apa itu penjualan ?", 
+            "Penjualan"],
+        "respons": ["Penjualan adalah nilai yang akan otomatis terhitung ketika ada penjualan masuk atau ada Invoice Penjualan yang dibuat."]
+    },
+
+    {
+        "tag": "Diskon",
+        "quests": [
+            "Apa yang dimaksud dengan istilah diskon ?", 
+            "Apa yang dimaksud dengan diskon ?", 
+            "Apa yang dimaksud diskon ?", 
+            "Apa arti dari istilah diskon ?", 
+            "Apa arti dari diskon ?", 
+            "Apa arti diskon ?", 
+            "Arti diskon ?", 
+            "Apa itu diskon ?", 
+            "Diskon"],
+        "respons": ["Diskon adalah potongan harga atas penjualan yang menjadi pengurang dari akun penjualan."]
+    },
+
+    {
+        "tag": "Retur",
+        "quests": [
+            "Apa yang dimaksud dengan istilah retur ?", 
+            "Apa yang dimaksud dengan retur ?", 
+            "Apa yang dimaksud retur ?", 
+            "Apa arti dari istilah retur ?", 
+            "Apa arti dari retur ?", 
+            "Apa arti retur ?", 
+            "Arti retur ?", 
+            "Apa itu retur ?", 
+            "Retur"],
+        "respons": ["Retur adalah sejumlah barang yang dikembalikan oleh pembeli kepada penjual, karena barang rusak atau deffect."]
+    },
+
+    {
+        "tag": "Penjualan_Bersih",
+        "quests": [
+            "Apa yang dimaksud dengan istilah penjualan bersih ?", 
+            "Apa yang dimaksud dengan penjualan bersih ?", 
+            "Apa yang dimaksud penjualan bersih ?", 
+            "Apa arti dari istilah penjualan bersih ?", 
+            "Apa arti dari penjualan bersih ?", 
+            "Apa arti penjualan bersih ?", 
+            "Arti penjualan bersih ?", 
+            "Apa itu penjualan bersih ?", 
+            "Penjualan bersih"],
+        "respons": ["Penjualan bersih adalah selisih antara penjualan dengan retur dan diskon."]
+    },
+
+    {
+        "tag": "Persediaan_Barang_Jadi_Awal",
+        "quests": [
+            "Apa yang dimaksud dengan istilah persediaan barang jadi awal ?", 
+            "Apa yang dimaksud dengan persediaan barang jadi awal ?", 
+            "Apa yang dimaksud persediaan barang jadi awal ?", 
+            "Apa arti dari istilah persediaan barang jadi awal ?", 
+            "Apa arti dari persediaan barang jadi awal ?", 
+            "Apa arti persediaan barang jadi awal ?", 
+            "Arti persediaan barang jadi awal ?", 
+            "Apa itu persediaan barang jadi awal ?", 
+            "Persediaan barang jadi awal"],
+        "respons": ["Persediaan barang yang tersedia di awal periode usaha."]
+    },
+
+    {
+        "tag": "Harga_Pokok_Produksi",
+        "quests": [
+            "Apa yang dimaksud dengan istilah harga pokok produksi ?", 
+            "Apa yang dimaksud dengan harga pokok produksi ?", 
+            "Apa yang dimaksud harga pokok produksi ?", 
+            "Apa arti dari istilah harga pokok produksi ?", 
+            "Apa arti dari harga pokok produksi ?", 
+            "Apa arti harga pokok produksi ?", 
+            "Arti harga pokok produksi ?", 
+            "Apa itu harga pokok produksi ?", 
+            "Harga pokok produksi"],
+        "respons": ["Harga pokok produksi adalah jumlah dari biaya-biaya yang dikeluarkan mulai pada saat pengadaan bahan baku hingga proses akhir"]
+    },
+
+    {
+        "tag": "Barang_Tersedia_Dijual",
+        "quests": [
+            "Apa yang dimaksud dengan istilah barang tersedia dijual ?", 
+            "Apa yang dimaksud dengan barang tersedia dijual ?", 
+            "Apa yang dimaksud barang tersedia dijual ?", 
+            "Apa arti dari istilah barang tersedia dijual ?", 
+            "Apa arti dari barang tersedia dijual ?", 
+            "Apa arti barang tersedia dijual ?", 
+            "Arti barang tersedia dijual ?", 
+            "Apa itu barang tersedia dijual ?", 
+            "Barang tersedia dijual"],
+        "respons": ["Barang tersedia dijual adalah jumlah dari persediaan awal dengan harga pokok produksi."]
+    },
+
+    {
+        "tag": "Harga_Pokok Penjualan",
+        "quests": [
+            "Apa yang dimaksud dengan istilah harga pokok penjualan ?", 
+            "Apa yang dimaksud dengan harga pokok penjualan ?", 
+            "Apa yang dimaksud harga pokok penjualan ?", 
+            "Apa arti dari istilah harga pokok penjualan ?", 
+            "Apa arti dari harga pokok penjualan ?", 
+            "Apa arti harga pokok penjualan ?", 
+            "Arti harga pokok penjualan ?", 
+            "Apa itu harga pokok penjualan ?", 
+            "Harga pokok penjualan"],
+        "respons": ["Harga pokok penjualan adalah total akumulasi dari semua biaya yang digunakan untuk membuat suatu produk atau jasa, yang dijual kepada konsumen."]
+    },
+
+    {
+        "tag": "Beban_Angkut_Penjualan",
+        "quests": [
+            "Apa yang dimaksud dengan istilah beban angkut penjualan ?", 
+            "Apa yang dimaksud dengan beban angkut penjualan ?", 
+            "Apa yang dimaksud beban angkut penjualan ?", 
+            "Apa arti dari istilah beban angkut penjualan ?", 
+            "Apa arti dari beban angkut penjualan ?", 
+            "Apa arti beban angkut penjualan ?", 
+            "Arti beban angkut penjualan ?", 
+            "Apa itu beban angkut penjualan ?", 
+            "Beban angkut penjualan"],
+            "respons": ["Beban angkut penjualan adalah biaya angkut yang ditanggung oleh pihak penjual pada saat mengirimkan barang dagangannya."]
+    },
+
+    {
+        "tag": "Beban_Penyusutan",
+        "quests": [
+            "Apa yang dimaksud dengan istilah beban penyusutan ?", 
+            "Apa yang dimaksud dengan beban penyusutan ?", 
+            "Apa yang dimaksud beban penyusutan ?", 
+            "Apa arti dari istilah beban penyusutan ?", 
+            "Apa arti dari beban penyusutan ?", 
+            "Apa arti beban penyusutan ?", 
+            "Arti beban penyusutan ?", 
+            "Apa itu beban penyusutan ?", 
+            "beban penyusutan"],
+        "respons": ["Beban penyusutan adalah pengakuan atas penggunaan manfaat potensial dari suatu aktiva tersebut."]
+    },
+
+    {
+        "tag": "Beban_Perawatan_Kendaraan",
+        "quests": [
+            "Apa yang dimaksud dengan istilah beban perawatan kendaraan ?", 
+            "Apa yang dimaksud dengan beban perawatan kendaraan ?", 
+            "Apa yang dimaksud beban perawatan kendaraan ?", 
+            "Apa arti dari istilah beban perawatan kendaraan ?", 
+            "Apa arti dari beban perawatan kendaraan ?", 
+            "Apa arti beban perawatan kendaraan ?", 
+            "Arti beban perawatan kendaraan ?", 
+            "Apa itu beban perawatan kendaraan ?", 
+            "Beban perawatan kendaraan"],
+        "respons": ["Beban perawatan kendaraan adalah biaya yang dikeluarkan perusahaan untuk merawat aset serta sistem dalam masa operasinya."]
+    },
+
+    {
+        "tag": "Beban_Lain_Lain",
+        "quests": [
+            "Apa yang dimaksud dengan istilah beban lain - lain ?", 
+            "Apa yang dimaksud dengan beban lain - lain ?", 
+            "Apa yang dimaksud beban lain - lain ?", 
+            "Apa arti dari istilah beban lain - lain ?", 
+            "Apa arti dari beban lain - lain ?", 
+            "Apa arti beban lain - lain ?", 
+            "Arti beban lain - lain ?", 
+            "Apa itu beban lain - lain ?", 
+            "Beban lain - lain"],
+        "respons": ["Beban lain - lain adalah beban yang tidak langsung berhubungan dengan kegiatan pokok usaha misalnya beban bunga dan beban iklan (beban non operasional."]
+    }
+]
+}
