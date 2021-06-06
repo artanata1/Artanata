@@ -108,7 +108,7 @@ def make_doc(json):
 
 app = Flask(__name__)
 
-@app.route('/postjson', methods = ['POST'])
+@app.route('/LabaRugi', methods = ['POST'])
 def postJsonHandler():
 	print (request.is_json)
 	content = request.get_json()
