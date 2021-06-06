@@ -7,6 +7,8 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Table
 from reportlab.platypus.tables import TableStyle
+from datetime import date
+
 
 def make_doc(json):
 	pdf = io.BytesIO()
@@ -15,44 +17,54 @@ def make_doc(json):
 
 	story = []
 	
+	today = date.today().strftime("%Y-%m")
+	penjualan_bersih=json["penjualan"]+json["returdiskon"]
+	Barang_Tersedia_dijual=json["pbjawal"]+json["hpp"]
+	HPP=Barang_Tersedia_dijual+json["pbjakhir"]
+	Penghasilan=penjualan_bersih-HPP
+	total_beban_penjualan=json["bangkut"]+json["bsusut"]+json["brawatk"]
+	total_beban=total_beban_penjualan+json["blainlain"]
+	laba_bersih=Penghasilan-total_beban
+	
 	pajak= 0 
 	#hitung pajak disini
 	
 	#hitung pajak berakhir
+	laba_bersih_setelah_pajak=laba_bersih-pajak
 	
 	#data dari pdfnya edit aja sesuai spacing sama JSON yang didapat
 	data= [['','Laporan Laba/Rugi', '', ''],
 	 [],
 	 [ 'Nama Perusahaan', json["nama"], '', ''], 											#1
-	 ['Periode', 'getdate()', '', ''], 													#2
+	 ['Periode', today, '', ''], 													#2
 	 [],																					#3
 	 ['Penjualan Bersih'], 																	#4
 	 ['Penjualan','','',json["penjualan"]] ,													#5
 	 ['Retur Penjualan dan Diskon','','',json["returdiskon"]] ,								#6
-	 ['Penjualan Bersih','','','xx'] ,														#json["penjualan"]+json["returdiskon"]
+	 ['Penjualan Bersih','','',penjualan_bersih] ,														
 	 []	,																					#8
 	 ['HARGA POKOK PENJUALAN']	,															#9
 	 ['Persediaan Barang Jadi (awal)',json["pbjawal"],'','']	,								#10
 	 ['Harga Pokok Produksi',json["hpp"],'','']	,											#11
-	 ['Barang Tersedia dijual','','xx',''],													#json["pbj"]+json["hpp"]
+	 ['Barang Tersedia dijual','',Barang_Tersedia_dijual,''],								
 	 ['Persediaan Barang Jadi (akhir)','',json["pbjakhir"],'']	,							#13
-	 ['HPP','','','xx'],																	#json["pbj"]+json["hpp"]+json["pbjakhir"]
-	 ['Laba Kotor/Penghasilan','','','xx'],													#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])
+	 ['HPP','','',HPP],																	
+	 ['Laba Kotor/Penghasilan','','',Penghasilan],													#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])
 	 [],																					#16
 	 ['BEBAN OPERASIONAL'],
 	 ['BEBAN PENJUALAN'],
 	 ['Beban Angkut Penjualan',json["bangkut"],'',''],
 	 ['Beban Penyusutan',json["bsusut"],'',''],
 	 ['Beban Perawatan Kendaraan',json["brawatk"],'',''],
-	 ['Total Beban Penjualan','','xx',''],													#json["bangkut"]+json["bsusut"]+json["brawatk"]
+	 ['Total Beban Penjualan','',total_beban_penjualan,''],													#json["bangkut"]+json["bsusut"]+json["brawatk"]
 	 [],
 	 ['Beban Administrasi dan Umum'],
 	 ['Beban lain-lain',json["blainlain"]],
 	 ['Total Biaya Adm dan umum','',json["blainlain"]],
-	 ['TOTAL BEBAN OPS & ADUM','','xx',''],													#json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"]
-	 ['LABA BERSIH USAHA SBLM PAJAK','','','xx'],											#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])-(json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"])
-	 ['PAJAK PENGHASILAN','','','pajak'],														#pajak
-	 ['LABA BERSIH USAHA STLH PAJAK','','','xx'],											#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])-(json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"])-pajak
+	 ['TOTAL BEBAN OPS & ADUM','',total_beban,''],													#json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"]
+	 ['LABA BERSIH USAHA SBLM PAJAK','','',laba_bersih],											#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])-(json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"])
+	 ['PAJAK PENGHASILAN','','',pajak],														#pajak
+	 ['LABA BERSIH USAHA STLH PAJAK','','',laba_bersih_setelah_pajak],											#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])-(json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"])-pajak
 	 
 	 ]
 
