@@ -7,6 +7,7 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Table
 from reportlab.platypus.tables import TableStyle
+from reportlab.platypus import Paragraph
 from datetime import date
 
 
@@ -33,38 +34,39 @@ def make_doc(json):
 	laba_bersih_setelah_pajak=laba_bersih-pajak
 	
 	#data dari pdfnya edit aja sesuai spacing sama JSON yang didapat
-	data= [['','Laporan Laba/Rugi', '', ''],
+	data= [[Paragraph('<b>Laporan Laba/Rugi</b>')],
 	 [],
-	 [ 'Nama Perusahaan', json["nama"], '', ''], 											#1
-	 ['Periode', today, '', ''], 													#2
+	 [ 'Nama Perusahaan', json["nama"],], 											#1
+	 ['Periode', today,], 													#2
 	 [],																					#3
-	 ['Penjualan Bersih'], 																	#4
-	 ['Penjualan','','',json["penjualan"]] ,													#5
-	 ['Retur Penjualan dan Diskon','','',json["returdiskon"]] ,								#6
-	 ['Penjualan Bersih','','',penjualan_bersih] ,														
+	 [Paragraph('<b>Penjualan Bersih</b>')], 																	#4
+	 ['Penjualan','','','Rp '+str(json["penjualan"])+'.00'] ,													#5
+	 ['Retur Penjualan dan Diskon','','','Rp '+str(json["returdiskon"])+'.00'] ,								#6
+	 ['Penjualan Bersih','','','Rp '+str(penjualan_bersih)+'.00'] ,														
 	 []	,																					#8
-	 ['HARGA POKOK PENJUALAN']	,															#9
-	 ['Persediaan Barang Jadi (awal)',json["pbjawal"],'','']	,								#10
-	 ['Harga Pokok Produksi',json["hpp"],'','']	,											#11
-	 ['Barang Tersedia dijual','',Barang_Tersedia_dijual,''],								
-	 ['Persediaan Barang Jadi (akhir)','',json["pbjakhir"],'']	,							#13
-	 ['HPP','','',HPP],																	
-	 ['Laba Kotor/Penghasilan','','',Penghasilan],													#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])
+	 [Paragraph('<b>HARGA POKOK PENJUALAN</b>')]	,															#9
+	 ['Persediaan Barang Jadi (awal)','Rp '+str(json["pbjawal"])+'.00','','']	,								#10
+	 ['Harga Pokok Produksi','Rp '+str(json["hpp"])+'.00','','']	,											#11
+	 ['Barang Tersedia dijual','','Rp '+str(Barang_Tersedia_dijual)+'.00',''],								
+	 ['Persediaan Barang Jadi (akhir)','','Rp '+str(json["pbjakhir"])+'.00','']	,							#13
+	 ['HPP','','','Rp '+str(HPP)+'.00'],																	
+	 ['Laba Kotor/Penghasilan','','','Rp '+str(Penghasilan)+'.00'],													#'Rp '+json["penjualan"]+'Rp '+json["returdiskon"]-('Rp '+json["pbj"]+'Rp '+json["hpp"]+'Rp '+json["pbjakhir"])+'.00'
 	 [],																					#16
-	 ['BEBAN OPERASIONAL'],
-	 ['BEBAN PENJUALAN'],
-	 ['Beban Angkut Penjualan',json["bangkut"],'',''],
-	 ['Beban Penyusutan',json["bsusut"],'',''],
-	 ['Beban Perawatan Kendaraan',json["brawatk"],'',''],
-	 ['Total Beban Penjualan','',total_beban_penjualan,''],													#json["bangkut"]+json["bsusut"]+json["brawatk"]
+	 [Paragraph('<b>BEBAN OPERASIONAL</b>')],
+	 [Paragraph('<b>BEBAN PENJUALAN</b>')],
+	 ['Beban Angkut Penjualan','Rp '+str(json["bangkut"])+'.00','',''],
+	 ['Beban Penyusutan','Rp '+str(json["bsusut"])+'.00','',''],
+	 ['Beban Perawatan Kendaraan','Rp '+str(json["brawatk"])+'.00','',''],
+	 ['Total Beban Penjualan','','Rp '+str(total_beban_penjualan)+'.00',''],													#'Rp '+json["bangkut"]+json["bsusut"]+json["brawatk"]
 	 [],
-	 ['Beban Administrasi dan Umum'],
-	 ['Beban lain-lain',json["blainlain"]],
-	 ['Total Biaya Adm dan umum','',json["blainlain"]],
-	 ['TOTAL BEBAN OPS & ADUM','',total_beban,''],													#json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"]
-	 ['LABA BERSIH USAHA SBLM PAJAK','','',laba_bersih],											#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])-(json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"])
-	 ['PAJAK PENGHASILAN','','',pajak],														#pajak
-	 ['LABA BERSIH USAHA STLH PAJAK','','',laba_bersih_setelah_pajak],											#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])-(json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"])-pajak
+	 [Paragraph('<b>Beban Administrasi dan Umum</b>')],
+	 ['Beban lain-lain','Rp '+str(json["blainlain"])+'.00','',''],
+	 ['Total Biaya Adm dan umum','','Rp '+str(json["blainlain"])+'.00'],
+	 ['TOTAL BEBAN OPS & ADUM','','Rp '+str(total_beban)+'.00',''],													#json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"]
+	 [],
+	 ['LABA BERSIH USAHA SBLM PAJAK','','','Rp '+str(laba_bersih)+'.00'],											#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])-(json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"])+'.00'
+	 ['PAJAK PENGHASILAN','','','Rp '+str(pajak)+'.00'],														#pajak
+	 ['LABA BERSIH USAHA STLH PAJAK','','','Rp '+str(laba_bersih_setelah_pajak)+'.00'],											#json["penjualan"]+json["returdiskon"]-(json["pbj"]+json["hpp"]+json["pbjakhir"])-(json["bangkut"]+json["bsusut"]+json["brawatk"]+json["blainlain"])+'.00'-pajak
 	 
 	 ]
 
@@ -84,12 +86,18 @@ def make_doc(json):
 	# TableStyle([('BACKGROUND',(1,1),(-2,-2), colors.green) atau TableStyle([('BACKGROUND',(1,1),(3,3), colors.green)
 	# ('TEXTCOLOR',(0,0),(1,-1), colors.red)])
 
-	#t.setStyle(
-	#	TableStyle([
-	#		('BACKGROUND',(1,1),(1,1), colors.green),
-	#		('TEXTCOLOR',(0,0),(1,-1), colors.red)
-	#	])
-	#)
+	t.setStyle(
+		TableStyle([
+			('ALIGN',(1,4),(-1,-1), 'CENTER'),
+			
+			('LINEBEFORE',(1,6),(-1,8),1,colors.black),
+			('LINEBEFORE',(1,11),(-1,16),1,colors.black),
+			('LINEBEFORE',(1,20),(-1,23),1,colors.black),
+			('LINEBEFORE',(1,26),(-1,28),1,colors.black),
+			('LINEBEFORE',(1,30),(-1,-1),1,colors.black)
+			
+		])
+	)
 
 	story.append(t)
 
@@ -105,10 +113,7 @@ def postJsonHandler():
 	print (request.is_json)
 	content = request.get_json()
 	pdf=pdf = make_doc(content)
-	pdffile= open("test.pdf","wb")
-	
-	pdffile.write(pdf.getbuffer())
-	pdffile.close()
-	return send_file('test.pdf', attachment_filename='test.pdf') 
+
+	return send_file(pdf, attachment_filename='test.pdf') 
 
 app.run(host='0.0.0.0', port= 8090)
