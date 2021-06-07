@@ -81,4 +81,4 @@ def postJsonHandler():
 	content = request.get_json()
 	return chatWithBot(content["chat"])
 
-app.run(host='0.0.0.0', port= 8090)
+app.run(host='0.0.0.0', port= 80)

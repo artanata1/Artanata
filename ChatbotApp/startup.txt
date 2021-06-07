@@ -1,0 +1,8 @@
+#!/bin/bash
+gsutil cp gs://ml-artanata/* .
+sudo apt-get update
+sudo apt-get install python -y
+sudo apt-get install python3-pip -y
+pip3 install -r requirements.txt
+python3 main-api-version.py
+
