@@ -19,9 +19,6 @@
   <a href="https://github.com/bismastr/kotliteApp" target="_blank">
       <img src="https://img.shields.io/badge/Kotlin-Kotlite_Apps-0095D5?style=flat&logo=Kotlin"></img>
   </a>
-  <a href="https://storage.googleapis.com/proud-lamp-312513/Kotlite.apk" target="_blank">
-      <img src="https://img.shields.io/badge/Download_APK-Demo_Ver.-3DDC84?style=flat&logo=Android"></img>
-  </a>
 </p>
 
 <details open="open">
