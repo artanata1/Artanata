@@ -1,3 +1,6 @@
+
+![logo artanata rounded-dark blue](https://user-images.githubusercontent.com/50481665/121219240-aea6da80-c8ad-11eb-9394-c9ad33ebbd3f.png)
+
 # How AI powered Chatbot can solve Accounting and Finance Efficiency (Artanata)
 Project Capstone Bangkit 2021
 
