@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".DashboardActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/splashscreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDataPerusahaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Perusahaan"
+        android:layout_marginTop="200dp" />
+
+    <Button
+        android:id="@+id/btnchatBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ChatBot"
+        android:layout_marginTop="270dp"/>
+
+    <Button
+        android:id="@+id/btn_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Keuangan"
+        android:layout_marginTop="340dp"/>
+
+    <Button
+        android:id="@+id/btn_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil Laporan"
+        android:layout_marginTop="410dp"/>
+
+
+</RelativeLayout>
