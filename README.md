@@ -94,5 +94,5 @@ Soon
 ## Present By
 
 <p align="center">
-  <img src="images/bangkit.png" height="200"></img>&nbsp; &nbsp;<img src="images/logopolos.png" height="500">
+  <img src="images/bangkit.png" height="200"></img>&nbsp; &nbsp;<img src="images/logpos.png" height="300">
 </p>
