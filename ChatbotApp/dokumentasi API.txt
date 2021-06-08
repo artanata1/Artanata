@@ -1,0 +1,64 @@
+Dokumentasi API
+Chatbot
+	Description:
+		endpoint dari machine learning model dimana akan membalas setiap pertanyaan dari user pada awalnya endpoint jika belum digunakan akan melakukan cold start dalam waktu sekitar 30 detik kemudian akan membalas setiap pertanyaan berikutnya dalam waktu kurang dari 1 detik.
+	Request:
+		endpoint:
+			POST https://us-central1-artanata-project.cloudfunctions.net/Chatbot
+		
+		Headers:
+			Content-Type: application/json
+		
+		Body:
+			{
+				"chat":"string"
+			}
+		contoh body:
+			{
+				"chat": "halo"
+			}
+
+	Response:
+		Content-Type: text/html; charset=utf-8
+		
+		contoh response:
+			Halo! Saya ArtaBot. Apa Anda membutuhkan bantuan ?
+		
+Laporan Laba\Rugi
+	Request:
+		endpoint:
+			POST https://us-central1-artanata-project.cloudfunctions.net/LabaRugi
+	
+		Headers:
+			Content-Type: application/json
+		
+		Body:
+			{
+				"nama":"string",
+				"penjualan":integer,
+				"returdiskon":integer,
+				"pbjawal":integer,
+				"hpp":integer,
+				"pbjakhir":integer,
+				"bangkut":integer,
+				"bsusut":integer,
+				"brawatk":integer,
+				"blainlain":integer
+			}
+		contoh body:
+			{
+				"nama":"abdc",
+				"penjualan":123,
+				"returdiskon":123,
+				"pbjawal":123,
+				"hpp":12,
+				"pbjakhir":12,
+				"bangkut":12,
+				"bsusut":12,
+				"brawatk":12,
+				"blainlain":12
+			}
+			
+	Response:
+		Response:
+			Content-Type: application/pdf
