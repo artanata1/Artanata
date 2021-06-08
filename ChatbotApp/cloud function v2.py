@@ -6,9 +6,18 @@ from flask import Flask
 from flask import request
 import nltk
 from nltk.stem import LancasterStemmer
+from google.cloud import storage
+from tensorflow.python.keras.models import model_from_yaml
 
 model = None
+words= None
+labels= None
+training= None
+output = None
+stemmer = LancasterStemmer()
+data = None
 def bag_of_words(s, words):
+	global stemmer
 	#melakukan tokenisasi kata dan enumerasi kalimat
 	bag = [0 for _ in range(len(words))]
 
@@ -24,6 +33,8 @@ def bag_of_words(s, words):
 
 def chatWithBot(inputText):
 	global model
+	global words
+	global data
 	#enumerasi dan tokenisasi
 	currentText = bag_of_words(inputText, words)
 	currentTextArray = [currentText]
@@ -64,13 +75,17 @@ def download_blob(bucket_name, source_blob_name, destination_file_name):
 
 def handler(request):
 	global model
-
+	global words
+	global labels
+	global training
+	global output
+	global data
 	# Model load which only happens during cold starts
 	if model is None:
-		
+		bucket="ml-artanata"
 		#dataset datasets.json
 		download_blob(bucket, 'datasets.json', '/tmp/datasets.json')
-		with open("datasets.json") as file:
+		with open("/tmp/datasets.json") as file:
 			data = json.load(file)
 		print("loaded dataset")
 

@@ -60,5 +60,5 @@ Laporan Laba\Rugi
 			}
 			
 	Response:
-		Response:
+		header:
 			Content-Type: application/pdf
