@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="#">
-    <img src="images/logo2.png" alt="Artanata Logo" height="100">
+    <img src="images/logo2.png" alt="Artanata Logo" height="400">
   </a>
   <br>
 </p>
@@ -48,12 +48,12 @@ There are around 63 million MSMEs in Indonesia, 95% of which are still in the mi
 
 |        Member        | Student ID |        Path        |       Project Role        |                                                  Contacts                                                  |
 | :------------------: | :--------: | :----------------: | :-----------------------: | :--------------------------------------------------------------------------------------------------------: |
-|  Mitha Aurellita W.  |  A0040193  | Mobile Development |     Mobile Developer      |     [![kia-linkedin][linkedin-shield]][kia-linkedin-url][![kia-github][github-shield]][kia-github-url]     |
-|  Riska Puspitasari   |  A1411698  | Mobile Development |     Mobile Developer      |     [![ade-linkedin][linkedin-shield]][ade-linkedin-url][![ade-github][github-shield]][ade-github-url]     |
-|  M. Aulia Daniswara  |  C0040172  |  Cloud Computing   |          DevOps           | [![bisma-linkedin][linkedin-shield]][bisma-linkedin-url][![bisma-github][github-shield]][bisma-github-url] |
-|    David Laksmana    |  C0040289  |  Cloud Computing   |          DevOps           | [![bisma-linkedin][linkedin-shield]][bisma-linkedin-url][![bisma-github][github-shield]][bisma-github-url] |
-|  Ika Puteri Nur A.   |  M0040188  |  Machine Learning  | Machine Learning Engineer | [![ferry-linkedin][linkedin-shield]][ferry-linkedin-url][![ferry-github][github-shield]][ferry-github-url] |
-| Al Fatoni Nugroho P. |  M0040186  |  Machine Learning  | Machine Learning Engineer |     [![vio-linkedin][linkedin-shield]][vio-linkedin-url][![vio-github][github-shield]][vio-github-url]     |
+|  Mitha Aurellita W.  |  A0040193  | Mobile Development |     Mobile Developer      |     [![mitha-linkedin][linkedin-shield]][mitha-linkedin-url][![mitha-github][github-shield]][mitha-github-url]     |
+|  Riska Puspitasari   |  A1411698  | Mobile Development |     Mobile Developer      |     [![riska-linkedin][linkedin-shield]][riska-linkedin-url][![riska-github][github-shield]][riska-github-url]     |
+|  M. Aulia Daniswara  |  C0040172  |  Cloud Computing   |          DevOps           | [![danis-linkedin][linkedin-shield]][danis-linkedin-url][![danis-github][github-shield]][danis-github-url] |
+|    David Laksmana    |  C0040289  |  Cloud Computing   |          DevOps           | [![david-linkedin][linkedin-shield]][david-linkedin-url][![david-github][github-shield]][david-github-url] |
+|  Ika Puteri Nur A.   |  M0040188  |  Machine Learning  | Machine Learning Engineer | [![ika-linkedin][linkedin-shield]][ika-linkedin-url][![ika-github][github-shield]][ika-github-url] |
+| Al Fatoni Nugroho P. |  M0040186  |  Machine Learning  | Machine Learning Engineer |     [![alfa-linkedin][linkedin-shield]][alfa-linkedin-url][![alfa-github][github-shield]][alfa-github-url]     |
 
 <!-- LinkedIn Link -->
 
@@ -97,5 +97,5 @@ Soon
 ## Present By
 
 <p align="center">
-  <img src="images/bangkitpng.png" height="200"></img>&nbsp; &nbsp;<img src="images/logo2.png" height="200">
+  <img src="images/bangkit.png" height="200"></img>&nbsp; &nbsp;<img src="images/logo2.png" height="200">
 </p>
