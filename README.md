@@ -7,9 +7,9 @@
 </p>
   
 <h1>ARTANATA CHATBOT</h1>
+<h5>How AI powered Chatbot can solve Accounting and Finance Efficiency</h5>
 
 <p align="center">
-  How AI powered Chatbot can solve Accounting and Finance Efficiency
   <br/>
   <strong>Our Project List</strong>
   <br>
