@@ -88,11 +88,11 @@ Soon
 
 - Company Data
 - Artanata Chatbot
-- Finalcial Report
+- Financial Report
 - View Report
 
 ## Present By
 
 <p align="center">
-  <img src="images/bangkit.png" height="200"></img>&nbsp; &nbsp;<img src="images/logo2.png" height="200">
+  <img src="images/bangkitpng.png" height="200"></img>&nbsp; &nbsp;<img src="images/logo2.png" height="200">
 </p>
