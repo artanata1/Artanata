@@ -3,7 +3,6 @@
   <a href="#">
     <img src="images/logo2.png" alt="Artanata Logo" height="400">
   </a>
-  [![Generic badge](https://img.shields.io/badge/team-B21-CAP0006-blue.svg)](https://shields.io/)
   <br>
 </p>
   
