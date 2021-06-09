@@ -15,7 +15,16 @@
   <ol>
     <li><a href="#executive-summary">Executive Summary</a></li>
     <li><a href="#team-members">Team Members</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#referensi-dataset">Referensi dataset</a></li>
+      
+    </ul>
     <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#features-of-this-projects">Features of This Projects</a></li>
+    
     <li><a href="#present-by">Present By</a></li>
   </ol>
 </details>
@@ -63,7 +72,27 @@ There are around 63 million MSMEs in Indonesia, 95% of which are still in the mi
   <img src="assets/splash.png" height="500"></img>&nbsp; &nbsp;<img src="assets/home.png" height="500">&nbsp; &nbsp;<img src="assets/recom_list.png" height="500">
 </p> -->
 
-## Referensi dataset
+## Getting Started
+This is simple step of our work project
+
+### Prerequisites
+- Use Python ver 3.8 or above (recommendation)
+- Prepare server cloud use GCP(Google Cloud Platform)
+- Use android version 4.1(Jelly Bean)
+
+### Installation
+- Clone this Repo
+  ```
+  $ git clone https://github.com/artanata1/Artanata
+  ```
+- Open folder ChatbotApp and install requirements.txt in your command prompt or in conda prompt
+  ```
+  $ pip install -r requirements.txt
+  $ conda install -r requirements.txt
+  ```
+
+### Referensi dataset
+
 - [Singkatan dan Akronim bahasa Indonesia (Wikipedia)](https://id.wiktionary.org/wiki/Lampiran:Daftar_singkatan_dan_akronim_dalam_bahasa_Indonesia#A)
 - [Topik Bahasa Indonesia(Github)](https://github.com/topics/bahasa-indonesia)
 - [https://github.com/louisowen6/NLP_bahasa_resources](https://github.com/louisowen6/NLP_bahasa_resources)
