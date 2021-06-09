@@ -20,11 +20,9 @@
       <li><a href="#prerequisites">Prerequisites</a></li>
       <li><a href="#installation">Installation</a></li>
       <li><a href="#referensi-dataset">Referensi dataset</a></li>
-      
     </ul>
     <li><a href="#documentation">Documentation</a></li>
-    <li><a href="#features-of-this-projects">Features of This Projects</a></li>
-    
+    <li><a href="#features-of-this-projects">Features of This Projects</a></li> 
     <li><a href="#present-by">Present By</a></li>
   </ol>
 </details>
