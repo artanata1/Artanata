@@ -3,21 +3,27 @@
     package="com.chatbot.mychatbot">
 
     <application
+        android:name="com.chaquo.python.android.PyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/splashscreen"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/splashscreen"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyChatBot">
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".ChatboxActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashscreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".DataPerusahaanActivity" />
+        <activity android:name=".ChatBotActivity" />
+        <activity android:name=".FormKeuanganActivity" />
+        <activity android:name=".HasilLaporanActivity" />
+        <activity android:name=".ChatboxActivity"/>
+
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="30dp"
-    tools:context=".DashboardActivity">
+    tools:context=".DataPerusahaanActivity">
 
     <ImageView
         android:id="@+id/img_logo"
@@ -21,31 +21,31 @@
         android:layout_marginLeft="128dp" />
 
     <Button
-        android:id="@+id/btnDataPerusahaan"
+        android:id="@+id/btn_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Data Perusahaan"
+        android:text="Nama Usaha"
         android:layout_marginTop="200dp" />
 
     <Button
-        android:id="@+id/btnchatBox"
+        android:id="@+id/btn_chatbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ChatBot"
+        android:text="Nama Pemilik"
         android:layout_marginTop="270dp"/>
 
     <Button
-        android:id="@+id/btnFormKeuangan"
+        android:id="@+id/btn_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Form Keuangan"
+        android:text="Alamat Usaha"
         android:layout_marginTop="340dp"/>
 
     <Button
-        android:id="@+id/btnHasilLaporan"
+        android:id="@+id/btn_hasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hasil Laporan"
+        android:text="Jenis Usaha"
         android:layout_marginTop="410dp"/>
 
 

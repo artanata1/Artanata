@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="720dp"
+    android:height="720dp"
+    android:viewportWidth="720"
+    android:viewportHeight="720">
+    <path
+        android:fillColor="#3b97d2"
+        android:name="Rectangle 1"
+        android:pathData="m0 0h720v720h-720v-720z" />
+    <path
+        android:name="Ellipse 1"
+        android:pathData="m356 184.6c107.4 0 194.4 87 194.4 194.4c0 107.4 -87 194.4 -194.4 194.4c-107.4 0 -194.4 -87 -194.4 -194.4c0 -107.4 87 -194.4 194.4 -194.4zm0 -15.6c-116 0 -210 94 -210 210c0 116 94 210 210 210c116 0 210 -94 210 -210c0 -116 -94 -210 -210 -210z"
+        android:fillColor="#eee" />
+</vector>

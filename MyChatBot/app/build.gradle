@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.chaquo.python'
 }
 
 android {
@@ -9,12 +10,38 @@ android {
 
     defaultConfig {
         applicationId "com.chatbot.mychatbot"
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+
+        python{
+            buildPython "C:/Users/acer/AppData/Local/Programs/Python/Python39/python.exe"
+        }
+
+        sourceSets{
+            main {
+                python.srcDir "src/main/python"
+            }
+        }
+
+        python{
+            pip{
+                install"nltk"
+            }
+        }
+
+        python{
+            pyc{
+                src false
+            }
+        }
     }
 
     buildTypes {
@@ -46,4 +73,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.github.samsao:messageui:1.0.0'
 }
