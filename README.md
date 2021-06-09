@@ -9,9 +9,7 @@
   
 <h1>ARTANATA CHATBOT</h1>
 <h5>How AI powered Chatbot can solve Accounting and Finance Efficiency</h5>
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-![Platform](https://img.shields.io/badge/Platform-Android-brightgreen.svg)
-![Platform](https://img.shields.io/badge/Language-java-yellow.svg)
+
 
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
