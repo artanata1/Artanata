@@ -8,7 +8,6 @@
   
 <h1>ARTANATA CHATBOT</h1>
 <h5>How AI powered Chatbot can solve Accounting and Finance Efficiency</h5>
-![Github All Releases](https://img.shields.io/github/downloads/AlFatoniNugrohoPutra/Artanata/total)
 
 
 <details open="open">
