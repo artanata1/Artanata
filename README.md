@@ -3,11 +3,14 @@
   <a href="#">
     <img src="images/logo2.png" alt="Artanata Logo" height="400">
   </a>
+  [![Generic badge](https://img.shields.io/badge/team-B21-CAP0006-blue.svg)](https://shields.io/)
   <br>
 </p>
   
 <h1>ARTANATA CHATBOT</h1>
 <h5>How AI powered Chatbot can solve Accounting and Finance Efficiency</h5>
+![Platform](https://img.shields.io/badge/Platform-Android-brightgreen.svg)
+![Platform](https://img.shields.io/badge/Language-java-yellow.svg)
 
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
@@ -61,6 +64,13 @@ There are around 63 million MSMEs in Indonesia, 95% of which are still in the mi
 <p align="center">
   <img src="assets/splash.png" height="500"></img>&nbsp; &nbsp;<img src="assets/home.png" height="500">&nbsp; &nbsp;<img src="assets/recom_list.png" height="500">
 </p> -->
+
+## Referensi dataset
+- [Singkatan dan Akronim bahasa Indonesia (Wikipedia)](https://id.wiktionary.org/wiki/Lampiran:Daftar_singkatan_dan_akronim_dalam_bahasa_Indonesia#A)
+- [Topik Bahasa Indonesia(Github)](https://github.com/topics/bahasa-indonesia)
+- [https://github.com/louisowen6/NLP_bahasa_resources](https://github.com/louisowen6/NLP_bahasa_resources)
+- [https://github.com/riochr17/Analisis-Sentimen-ID](https://github.com/riochr17/Analisis-Sentimen-ID)
+- [https://github.com/irfnrdh/Awesome-Indonesia-NLP](https://github.com/irfnrdh/Awesome-Indonesia-NLP)
 
 ## Documentations
 
