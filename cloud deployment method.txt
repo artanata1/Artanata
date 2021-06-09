@@ -1,0 +1,18 @@
+deployment pada cloud
+
+deployment chatbot
+- Melakukan upload file menuju bucket baru pada project pada bagian root untuk diambil pada saat menjalankan cloud function
+	- file yang diupload:
+		- chatbotapp\chatbot.pickle
+		- chatbotapp\chatbotmodel.h5
+		- chatbotapp\datasets.json
+		- chatbotapp\chatbotmodel.yaml
+- Melakukan modifikasi pada program python main.py untuk mendapatkan request dari endpoint dan mengembalikannya sebagai application/text
+	- hasil modifikasi adalah "chatbotapp\cloud function v2.py"
+	- menambahkan file "chatbotapp\requirements.txt" untuk library yang diperlukan
+- Melakukan depoyment pada cloud function dengan spesifikasi ram 2GB dengan kode "chatbotapp\cloud function v2.py" dan "chatbotapp\requirements.txt"
+	- melakukan modifikasi variabel bucket pada handler sesuai dengan nama bucket yang dibuat
+	- endpoint dari cloud function adalah "handler"
+	
+deployment labarugi
+- Melakukan deployment dengan kode "json2pdf\cloud function.py" dan "json2pdf\requirements.txt" dengan setting yang lain pada default
