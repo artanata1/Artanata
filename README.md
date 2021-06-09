@@ -64,9 +64,8 @@ There are around 63 million MSMEs in Indonesia, 95% of which are still in the mi
 
 ## Documentations
 
-<img src="images/artanata1.jpg" alt="Documentation 1" height="200">
-<img src="images/artanata2.jpg" alt="Documentation 2" height="200">
-<img src="images/artanata3.jpg" alt="Documentation 3" height="200">
+<img src="images/artanata1.jpg" alt="Documentation 1" height="400"> <img src="images/artanata2.jpg" alt="Documentation 2" height="400">
+<img src="images/artanata3.jpg" alt="Documentation 3" height="400">
 
 
 ## Features of This Projects
