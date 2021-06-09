@@ -12,16 +12,10 @@
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
-    <li>
-      <a href="#executive-summary">Executive Summary</a>
-    </li>
+    <li><a href="#executive-summary">Executive Summary</a></li>
     <li><a href="#team-members">Team Members</a></li>
-    <li><a href="#our-products">Our Products</a>
-    <ul>
-      <li><a href="#documentation">Documentation</a></li>
-    </ul>
-    </li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#present-by">Present By</a></li>
   </ol>
 </details>
 
@@ -68,9 +62,12 @@ There are around 63 million MSMEs in Indonesia, 95% of which are still in the mi
   <img src="assets/splash.png" height="500"></img>&nbsp; &nbsp;<img src="assets/home.png" height="500">&nbsp; &nbsp;<img src="assets/recom_list.png" height="500">
 </p> -->
 
-### Documentations
+## Documentations
 
-Soon
+<img src="images/artanata1.jpg" alt="Documentation 1" height="200">
+<img src="images/artanata2.jpg" alt="Documentation 2" height="200">
+<img src="images/artanata3.jpg" alt="Documentation 3" height="200">
+
 
 ## Features of This Projects
 
